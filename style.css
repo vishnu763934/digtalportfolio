@@ -1,0 +1,109 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #f4f9ff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Picture */
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 3px solid #007bff;
+    object-fit: contain; /* Ensures full image is visible */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Profile Picture Hover Effect */
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #007bff;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: left; /* Aligns text properly */
+}
+
+/* Section Hover Effect */
+.section:hover {
+    box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.2);
+    transform: scale(1.02);
+    background: #e3f2fd;
+}
+
+/* Headings */
+h1 {
+    color: white;
+    background: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Links (Button Style) */
+a {
+    color: white;
+    text-decoration: none;
+    background: #007bff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s ease-in-out;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+a:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+}
